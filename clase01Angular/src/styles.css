@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #fafdea;
+    --main-bg-color: #360b41;
+    --secondary-100: #7d677e;
+    --secondary-300:#4f2c4d;
+    --secondary-700:#ccc9aa;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    color: var(--primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding:3rem;
+    margin:3rem;
+    width: 50%;
+    background-color: var(--secondary-100);
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    & .title{
+        font-size: 3rem;
+    }
+
+    & .subtitle{
+        color: var(--secondary-300);
+        font-weight: bolder;
+        letter-spacing: .04em;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.container-input{
+    position: relative;
+    border-radius: .2rem;
+}
+.input{
+    padding: 10px;
+    padding-left: 40px;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    background-color: var(--primary);
+    width: 320px;
+    color: var(--secondary-300);
+    border-bottom: 2px solid var(--secondary-300);
+}
+.icon{
+    color: var(--secondary-100);
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    transform: translateY(-50);
+}
+
+.forgot{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--secondary-300);
+}
+.forgot:hover{
+    color: var(--main-bg-color);
+    transition: .2s;
+}
+.submite{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.submit{
+    padding: 10px;
+    border-radius: .2rem;
+    border: none;
+    background-color: var(--secondary-300);
+    color: var(--primary);
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+    color: white;
+    transition: .1s;
+}
+.memeber{
+    cursor: pointer;
+}
+.singup{
+    color: var(--secondary-300);
+}
+.singup:hover{
+    color: var(--main-bg-color);
+}
+
+

@@ -1,0 +1,33 @@
+<div class="body">
+    <div class="container">
+        <h1 class="title">Login <span class="subtitle">Form.</span></h1>
+    
+        <div class="constainer-form">
+            <div class="inputs">
+                <div class="container-input">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <input 
+                    class="input" 
+                    type="email" 
+                    required placeholder="Email Address"
+                    required [(ngModel)]="nombreUsuario"
+                    >
+                </div>
+                <div class="container-input">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <input 
+                    class="input" 
+                    type="password" 
+                    required placeholder="Password"
+                    [(ngModel)]="contrasena"
+                    >
+                </div>
+            </div>
+            <div class="submite">
+                <input class="submit" type="submit" value="LOGIN" (click)="validarInicio()">
+                <h5 class="memeber" (click)="navegarRegister()">Not a member? <span class="singup">Singnup now</span></h5>
+                <h5 class="memeber" (click)="navegarForgot()">Forgot your password? <span class="singup">Resetscale</span></h5>
+            </div>
+        </div>
+    </div>
+</div>
