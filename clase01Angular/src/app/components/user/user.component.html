@@ -1,0 +1,20 @@
+<h1>Hello {{username}}, you are a {{ocupacion}}</h1>
+@if (usuarioExistente) {
+  <p>Claro que existes</p>
+}@else {
+  <p>Ups! usted no existe</p>
+}
+
+<h2>Sistemas operativos</h2>
+<ul>
+  @for (os of operatingSystems; track os.id) {
+    <li (click)="onMouseHover(os.name)">{{os.name}}</li>
+  }
+</ul>
+
+<div 
+  class="editable"
+  [contentEditable]="isEditable"
+>
+  <button (click)="emitToParent()">Message to parent!</button>
+</div>
